@@ -1,10 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello!");
 Console.WriteLine("Input the first number:");
-int firstNumber = int.Parse(Console.ReadLine());
+decimal firstNumber = decimal.Parse(Console.ReadLine());
 
 Console.WriteLine("Input the second number:");
-int secondNumber = int.Parse(Console.ReadLine());
+decimal secondNumber = decimal.Parse(Console.ReadLine());
 
 Console.WriteLine("What would you like to do with them?");
 Console.WriteLine("[A]dd numbers");
@@ -48,27 +48,27 @@ while (!isValidInput)
 
 
 
-void AddNumbers(int firstInput, int secondInput)
+void AddNumbers(decimal firstInput, decimal secondInput)
 {
-    int sum = firstInput + secondInput;
+    decimal sum = firstInput + secondInput;
     Console.WriteLine($"{firstNumber} + {secondNumber} = {sum}");
     Console.WriteLine("Press any key to close.");
 }
-void SubtractNumbers(int firstInput, int secondInput)
+void SubtractNumbers(decimal firstInput, decimal secondInput)
 {
-    int difference = firstInput - secondInput;
+    decimal difference = firstInput - secondInput;
     Console.WriteLine($"{firstNumber} - {secondNumber} = {difference}");
     Console.WriteLine("Press any key to close.");
 }
-void MultiplyNumbers(int firstInput, int secondInput)
+void MultiplyNumbers(decimal firstInput, decimal secondInput)
 {
-    int product = firstInput * secondInput;
+    decimal product = firstInput * secondInput;
     Console.WriteLine($"{firstNumber} x {secondNumber} = {product}");
     Console.WriteLine("Press any key to close.");
 }
-void DivideNumbers(int firstInput, int secondInput)
+void DivideNumbers(decimal firstInput, decimal secondInput)
 {
-    int quotient = firstInput / secondInput;
+    decimal quotient = firstInput / secondInput;
     Console.WriteLine($"{firstNumber} / {secondNumber} = {quotient}");
     Console.WriteLine("Press any key to close.");
 }
